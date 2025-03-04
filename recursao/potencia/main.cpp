@@ -2,7 +2,23 @@
 
 using namespace std;
 
-int main() {
+double pow(int a, int n) {
+    if(p==0){
+        return 1;
+    } else {
+        return n * pow(n, p-1);
+    } 
+}
 
-return 0;
+int main() {
+    
+    int n;
+    int expoente;
+    cin >> n >> expoente;
+    int res =  pow(n, expoente);
+    cout << res;
+    
+    
+    
+    return 0;
 }
